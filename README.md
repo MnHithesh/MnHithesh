@@ -17,17 +17,18 @@
 
 ### 👨‍💻 About
 
-I own features end to end — interface through backend services to deployment. Most of my depth is in **Angular (v6 → v16)** and **RxJS-driven real-time systems**: WebSocket market data pipelines, TradingView chart integrations, custom HTML5 Canvas visualisations, and change-detection tuning on data-heavy screens.
+I own features end to end — interface through backend services to deployment. Most of my depth is in **Angular (v6 → v22)** and **RxJS-driven real-time systems**: WebSocket market data pipelines, TradingView chart integrations, custom HTML5 Canvas visualisations, and change-detection tuning on data-heavy screens.
 
 - 🏗️ Architecting a cross-platform **Ionic** trading app as sole frontend developer
 - 🧬 Building **micro frontend** systems with Module Federation across mismatched bundlers
+- 📱 Shipping offline-first mobile apps with **Angular 22 + Capacitor**
 - 🤖 Building AI automation pipelines with **n8n** and LLM APIs outside client work
 - 🌱 Currently learning **RabbitMQ** and **React Native**
 - 📍 Bengaluru, India · 📫 **m.n.hithesh26@gmail.com**
 
 ---
 
-### 🚀 Featured Work
+### 🚀 Projects
 
 #### 🔷 [Personal Portfolio — Micro Frontend Architecture](https://hitheshmn.prehinix.com/)
 
@@ -37,13 +38,13 @@ The interesting part is the bundler bridge — a Webpack-based Angular host cons
 
 `Angular` `React` `Vite` `Webpack Module Federation` `GSAP` `Lenis`
 
-#### 💰 DuoBudget — AI-Powered Couples Budget Tracker
+#### 👕 [Dresscode — Offline-First Wardrobe App](https://github.com/MnHithesh/dresscode-mobile)
 
-Budget management for couples — shared expense tracking, cost splitting, and joint financial goals, with an OpenAI-powered assistant that analyses spending patterns and returns personalised suggestions.
+An Android wardrobe manager built on **Angular 22 and Capacitor 8**, running entirely on-device. Catalogue your closet from camera captures, inspiration shots, tag scans, or receipts; build and save looks; get outfit suggestions and wear-pattern insights.
 
-[Frontend](https://github.com/MnHithesh/duobudget_frontend) · [Backend](https://github.com/MnHithesh/duobudget_backend)
+Fully local persistence via SQLite (`@capacitor-community/sqlite` on device, `sql.js` + `jeep-sqlite` in the browser), bootstrapped through Angular's `provideAppInitializer` so the database and preferences are ready before the first route resolves. Standalone components with lazy-loaded routes throughout.
 
-`React` `Node.js` `OpenAI API`
+`Angular 22` `Capacitor 8` `SQLite` `TypeScript` `RxJS` `Vitest`
 
 #### 🎯 [JobFit AI — Automated Resume Tailor Agent](https://github.com/MnHithesh/ai-resume-tailor-agent)
 
@@ -52,6 +53,22 @@ An end-to-end automation pipeline that watches Gmail for recruiter emails, extra
 Three-stage pipeline (JD extraction → tailoring → ATS scoring) with prompt constraints that let the model reorder and reprioritise existing content but never invent experience.
 
 `n8n` `Google Gemini API` `Node.js` `Gmail IMAP` `Discord Webhooks`
+
+#### ⏰ [Task Reminder — Self-Hosted Reminder Service](https://github.com/MnHithesh/task-remainder)
+
+A reminder service that actually reaches you. Browser notifications die when the browser closes, so delivery runs through a Discord bot on the server instead — an outbound WebSocket that needs no public URL, no open port, and no TLS, so it works behind a home router. Reminders arrive as interactive embeds with action buttons, routed to separate work and personal channels, with follow-up chasing for anything left unacknowledged.
+
+Persistence uses Node's built-in `node:sqlite` rather than `better-sqlite3`, deliberately avoiding native compilation and the ABI breakage that comes with every Node release. Discord delivery degrades gracefully — drop the token and the rest of the service runs unchanged.
+
+`Node.js 24` `node:sqlite` `discord.js` `ESM`
+
+#### 💰 DuoBudget — Shared Budget Tracker for Couples
+
+Shared expense tracking, cost splitting, and joint financial goals, with an OpenAI-powered assistant that analyses spending patterns and returns personalised suggestions.
+
+[Frontend](https://github.com/MnHithesh/duobudget_frontend) · [Backend](https://github.com/MnHithesh/duobudget_backend)
+
+`React` `Node.js` `Express` `OpenAI API`
 
 ---
 
@@ -87,11 +104,13 @@ Three-stage pipeline (JD extraction → tailoring → ATS scoring) with prompt c
 ![Node.js](https://img.shields.io/badge/Node.js-6DA55F?style=flat-square&logo=node.js&logoColor=white)
 ![Express](https://img.shields.io/badge/Express-404D59?style=flat-square&logo=express&logoColor=61DAFB)
 ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=flat-square&logo=mongodb&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
 ![WebSockets](https://img.shields.io/badge/WebSockets-010101?style=flat-square&logo=socketdotio&logoColor=white)
 ![Puppeteer](https://img.shields.io/badge/Puppeteer-40B5A4?style=flat-square&logo=puppeteer&logoColor=white)
 
 **Mobile, Cloud & Tools**
 
+![Capacitor](https://img.shields.io/badge/Capacitor-119EFF?style=flat-square&logo=capacitor&logoColor=white)
 ![Ionic](https://img.shields.io/badge/Ionic-3880FF?style=flat-square&logo=ionic&logoColor=white)
 ![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat-square&logo=amazonwebservices&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
