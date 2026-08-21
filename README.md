@@ -25,7 +25,7 @@
 <table>
 <tr>
 <td width="30%" align="center" valign="middle">
-  <img src="assets/hithesh-avatar-circle.png" width="200" alt="Hithesh M N"/>
+  <img src="hithesh-avatar-circle.png" width="200" alt="Hithesh M N"/>
   <br/><br/>
   <b>Hithesh M N</b><br/>
   <sub>Bengaluru, India 🇮🇳</sub>
@@ -84,7 +84,7 @@ I work on production systems where the frontend is the hard part — WebSocket m
 ### 🔷 Portfolio — Micro Frontend
 
 <a href="https://hitheshmn.prehinix.com/">
-  <img src="assets/portfolio.png" width="100%" alt="Portfolio preview"/>
+  <img src="portfolio.png" width="100%" alt="Portfolio preview"/>
 </a>
 
 An Angular shell owns routing, layout and lifecycle; a React remote is built independently in Vite and loaded at runtime via **Module Federation**.
@@ -99,10 +99,6 @@ The hard part is the bundler bridge — a Webpack host consuming a pure-ESM Vite
 <td width="50%" valign="top">
 
 ### 👕 Dresscode — Offline Wardrobe App
-
-<a href="https://github.com/MnHithesh/dresscode-mobile">
-  <img src="assets/dresscode.png" width="100%" alt="Dresscode preview"/>
-</a>
 
 Android wardrobe manager on **Angular 22 + Capacitor 8**, running entirely on-device. Catalogue from camera, inspiration shots, tag scans or receipts; build looks; get wear-pattern insights.
 
@@ -119,10 +115,6 @@ SQLite persistence with a browser fallback, bootstrapped via `provideAppInitiali
 
 ### 🎯 JobFit AI — Resume Tailor Agent
 
-<a href="https://github.com/MnHithesh/ai-resume-tailor-agent">
-  <img src="assets/jobfit.png" width="100%" alt="JobFit AI preview"/>
-</a>
-
 Watches Gmail for recruiter emails, extracts the JD with Gemini, and produces a tailored ATS-optimised resume in under 60 seconds — then pushes match score, matched/missing skills and improvement notes to Discord.
 
 Three-stage pipeline with prompt constraints that let the model reprioritise existing content but never invent experience.
@@ -135,10 +127,6 @@ Three-stage pipeline with prompt constraints that let the model reprioritise exi
 <td width="50%" valign="top">
 
 ### ⏰ Task Reminder — Self-Hosted
-
-<a href="https://github.com/MnHithesh/task-remainder">
-  <img src="assets/task-reminder.png" width="100%" alt="Task Reminder preview"/>
-</a>
 
 Browser notifications die when the browser closes, so delivery runs through a Discord bot instead — an outbound WebSocket needing no public URL, open port or TLS, so it works behind a home router.
 
