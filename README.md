@@ -20,7 +20,7 @@
 
 <!-- ══════════════════════ ABOUT ══════════════════════ -->
 
-## 👋 About
+## About
 
 <table>
 <tr>
@@ -35,14 +35,13 @@
 ```ts
 const hithesh: Engineer = {
   role:      'Senior Frontend Developer & Tech Lead',
-  company:   'Delivery Centric — since Dec 2021',
   focus:     ['Angular v6 → v22', 'RxJS', 'Micro Frontends'],
   building:  'a cross-platform Ionic trading app — sole dev',
   ownership: 'interface → backend services → deployment',
 };
 ```
 
-I work on production systems where the frontend is the hard part — WebSocket market-data pipelines, TradingView chart integrations, custom HTML5 Canvas visualisations, and change-detection tuning on screens that update many times a second.
+I work on production systems where the frontend is the hard part — live market data, charts that redraw many times a second, and trading logic that has to be exactly right.
 
 I own features end to end rather than handing off at the API boundary, which means the backend services, the deployment and the mobile shell too when that's what the feature needs.
 
@@ -52,37 +51,156 @@ I own features end to end rather than handing off at the API boundary, which mea
 
 <br/>
 
-<!-- ══════════════════════ HIGHLIGHTS ══════════════════════ -->
+<!-- ══════════════════════ FEATURES ══════════════════════ -->
 
-## 📌 Career Highlights
+## ⚡ Features I've Built
 
 <table>
 <tr>
-<td align="center" width="25%">
-  <h3>8+</h3>
-  <sub>YEARS<br/>ENGINEERING</sub>
+<td width="50%" valign="top">
+
+### 📈 TradingView Chart Integration
+
+Wired the TradingView Charting Library into a live crypto exchange — implementing the datafeed adapter so historical bars, real-time ticks and resolution changes all resolve from the same source of truth.
+
+The difficult part was **feed synchronisation**: reconciling REST history with a WebSocket stream that keeps arriving during the fetch, so bars don't duplicate or gap at the seam when a user switches symbol or timeframe.
+
+`TradingView` `WebSockets` `RxJS` `Angular`
+
 </td>
-<td align="center" width="25%">
-  <h3>20+</h3>
-  <sub>MODULES MIGRATED<br/>ANGULAR 6 → 12</sub>
+<td width="50%" valign="top">
+
+### 🫧 HTML5 Canvas Bubble Visualisation
+
+Built a crypto market-overview bubble chart from scratch on raw Canvas — no charting library — because nothing off the shelf handled hundreds of continuously resizing, repositioning bubbles at an acceptable frame rate.
+
+Bubble radius is driven by a **dynamic sizing algorithm** over live market data, with RxJS streams feeding updates into the render loop and drawing decoupled from data arrival so the canvas stays smooth under bursty feeds.
+
+`Canvas API` `RxJS` `TypeScript`
+
 </td>
-<td align="center" width="25%">
-  <h3>4</h3>
-  <sub>PLATFORMS BUILT<br/>FROM SCRATCH</sub>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🔁 Copy Trading Module
+
+Owned end to end: the system that mirrors one trader's positions into follower accounts automatically.
+
+Designed the **shared service architecture** and reactive data flows behind it, plus trade configuration management and the business-rule validation layer that decides whether a mirrored order is allowed to execute — sizing limits, instrument eligibility and account state, evaluated before anything reaches the exchange.
+
+`Angular` `RxJS` `Node.js`
+
 </td>
-<td align="center" width="25%">
-  <h3>3</h3>
-  <sub>PRODUCTS OWNED<br/>CONCURRENTLY</sub>
+<td width="50%" valign="top">
+
+### 📊 Real-Time Market Trend Analytics
+
+A module turning raw market movement into readable trading signals, combining custom **sentiment-analysis logic** with Highcharts visualisations.
+
+The engineering constraint was render cost: data arrives continuously, so I used **OnPush change detection** with RxJS-driven orchestration to keep Angular from re-checking the whole component tree on every tick.
+
+`Highcharts` `RxJS` `OnPush` `Angular`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🔔 Full-Stack Alerting System
+
+Users configure price and percentage-based alerts on any instrument; the backend evaluates trigger conditions against live data and dispatches **email and SMS** notifications when they fire.
+
+Built both halves — the configuration UI and the server-side evaluation and dispatch logic, including the conditions that decide when an alert has genuinely triggered rather than flickered across a threshold.
+
+`Node.js` `Express` `MongoDB` `Angular`
+
+</td>
+<td width="50%" valign="top">
+
+### ⚙️ Futures Execution Engine
+
+Re-engineered the futures order engine after breaking upstream **IIFL API changes**, preserving custom order-generation logic that the business depended on.
+
+That logic covers price calculation, quantity distribution across legs, and generating **single-leg, double-leg and four-leg** orders — strategies where every leg must be priced and sized correctly relative to the others or the position is wrong.
+
+`Node.js` `REST APIs` `TypeScript`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🧬 Micro Frontend Architecture
+
+An Angular shell owning routing, layout and lifecycle, with a React remote built independently in Vite and loaded at runtime through **Module Federation**.
+
+The interesting problem is the bundler bridge — a Webpack-based host consuming a pure-ESM Vite bundle — solved with explicit mount/unmount boundaries and no shared global state, so either side can be rebuilt and deployed without touching the other.
+
+`Module Federation` `Webpack` `Vite` `Angular` `React`
+
+</td>
+<td width="50%" valign="top">
+
+### 🔄 Angular 6 → 12 Migration
+
+Planned and executed a phased migration across **20+ modules and screens**, solo, on a platform that had to stay live throughout.
+
+Beyond the version bump: upgrading Angular Material, untangling third-party dependency conflicts, then modernising the architecture underneath — lazy loading, modular restructuring and reusable component design, so the codebase was better afterwards rather than merely newer.
+
+`Angular` `Angular Material` `Webpack`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🕸️ Puppeteer Price Pipeline
+
+Backend service for limit-order processing that retrieves **live NSE pricing** via Puppeteer where no API was available, and generates broker-ready trading orders from it.
+
+Headless scraping in a trading path means handling stale reads and page-structure changes carefully — a wrong price here produces a real order.
+
+`Puppeteer` `Node.js`
+
+</td>
+<td width="50%" valign="top">
+
+### 🎯 Canvas for Computer Vision
+
+On an AI/ML platform, built Canvas components rendering **spatial data, object positions and coordinate overlays** on top of model output, so clients could visually interpret detection and tracking results in real time.
+
+Paired with Plotly.js analytics dashboards for monitoring model performance and prediction results.
+
+`Canvas API` `Plotly.js` `Angular` `RxJS`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🔐 RBAC & Permission Workflows
+
+Role-based access control across recruiters, managers, sales and leadership on a CRM platform — with role-specific data visibility, so the same screen shows different records depending on who's looking.
+
+Backed by **RxJS state management** tracking recruitment workflow state, and frontend caching to cut redundant API calls on data-heavy modules.
+
+`Angular` `RxJS` `Node.js` `MongoDB`
+
+</td>
+<td width="50%" valign="top">
+
+### 📱 Offline-First Mobile
+
+A wardrobe app on **Angular 22 + Capacitor 8** running entirely on-device with no backend — SQLite persistence with a browser fallback, bootstrapped through `provideAppInitializer` so the database resolves before the first route.
+
+Currently sole frontend developer on a cross-platform **Ionic trading app**: market monitoring, trading workflows, portfolio tracking and API integration.
+
+`Capacitor` `Ionic` `SQLite` `Angular 22`
+
 </td>
 </tr>
 </table>
-
-- 🔄 Planned and executed a **phased Angular 6 → 12 migration** across 20+ modules solo — dependency conflicts, Material upgrade, lazy loading and modular restructuring
-- 📈 Built the **real-time charting infrastructure** for a live crypto exchange: TradingView integration, WebSocket feed synchronisation, RxJS orchestration
-- 🫧 Wrote a **custom HTML5 Canvas bubble visualisation** from scratch with dynamic sizing driven by live market data
-- 🔁 Owned the **Copy Trading module** end to end — shared service architecture, reactive data flows, business-rule validation for automated execution
-- ⚙️ Re-engineered a **futures execution engine** after breaking IIFL API changes, preserving single-, double- and four-leg order generation
-- 👥 Mentor junior developers through code review and architecture discussion alongside hands-on delivery
 
 <br/>
 
@@ -108,28 +226,11 @@ I own features end to end rather than handing off at the API boundary, which mea
   <img src="https://img.shields.io/badge/n8n-1a1b27?style=flat-square&logo=n8n&logoColor=EA4B71" alt="n8n"/>
 </p>
 
-<details>
-<summary><b>Where I actually go deep</b></summary>
-
-<br/>
-
-| Area | Detail |
-|---|---|
-| **Angular** | v6 through v22 · standalone components · lazy routes · `provideAppInitializer` · OnPush tuning · Angular Material |
-| **Reactive state** | RxJS operators, subject-based service layers, stream orchestration for live data, race and back-pressure handling |
-| **Micro frontends** | Webpack Module Federation, host/remote contracts, cross-bundler ESM interop, runtime mount/unmount boundaries |
-| **Real-time UI** | WebSocket feed sync, TradingView Charting Library, Highcharts, custom Canvas rendering |
-| **Backend** | Node.js, Express, REST design, MongoDB, SQLite, Puppeteer scraping, alerting and notification pipelines |
-| **Mobile** | Ionic, Capacitor 8, on-device SQLite, camera and local-notification plugins |
-| **Delivery** | Docker, AWS (EC2, S3, Amplify), Git, code review, mentoring |
-
-</details>
-
 <br/>
 
 <!-- ══════════════════════ PROJECTS ══════════════════════ -->
 
-## 🚀 Featured Projects
+## 🚀 Open Source & Side Projects
 
 <table>
 <tr>
@@ -141,11 +242,9 @@ I own features end to end rather than handing off at the API boundary, which mea
   <img src="portfolio.png" width="100%" alt="Portfolio preview"/>
 </a>
 
-An Angular shell owns routing, layout and lifecycle; a React remote is built independently in Vite and loaded at runtime via **Module Federation**.
+Angular shell plus an independently-built React remote over Module Federation, with GSAP and Lenis driving motion and smooth scroll.
 
-The hard part is the bundler bridge — a Webpack host consuming a pure-ESM Vite bundle, with explicit mount/unmount boundaries and no shared global state.
-
-`Angular` `React` `Vite` `Module Federation` `GSAP` `Lenis`
+`Angular` `React` `Vite` `Module Federation` `GSAP`
 
 <a href="https://hitheshmn.prehinix.com/"><img src="https://img.shields.io/badge/Live_Site-2C5364?style=flat-square&logo=vercel&logoColor=white"/></a>
 
@@ -154,13 +253,9 @@ The hard part is the bundler bridge — a Webpack host consuming a pure-ESM Vite
 
 ### 👕 Dresscode — Offline Wardrobe App
 
-Android wardrobe manager on **Angular 22 + Capacitor 8**, running entirely on-device with no backend.
+Android wardrobe manager on Angular 22 + Capacitor 8, fully on-device. Catalogue from camera, inspiration shots, tag scans or receipts; build looks; get wear-pattern insights.
 
-Catalogue pieces from camera captures, inspiration shots, tag scans or receipts; assemble and save looks; get outfit suggestions and wear-pattern insights.
-
-SQLite persistence with a browser fallback, bootstrapped via `provideAppInitializer` so the database and preferences resolve before the first route.
-
-`Angular 22` `Capacitor 8` `SQLite` `RxJS` `Vitest`
+`Angular 22` `Capacitor 8` `SQLite` `Vitest`
 
 <a href="https://github.com/MnHithesh/dresscode-mobile"><img src="https://img.shields.io/badge/Source-2C5364?style=flat-square&logo=github&logoColor=white"/></a>
 
@@ -171,11 +266,9 @@ SQLite persistence with a browser fallback, bootstrapped via `provideAppInitiali
 
 ### 🎯 JobFit AI — Resume Tailor Agent
 
-Watches Gmail for recruiter emails, extracts the job description with Gemini, and produces a tailored ATS-optimised resume in under 60 seconds — then pushes match score, matched and missing skills, and improvement notes to Discord.
+Watches Gmail for recruiter emails, extracts the JD with Gemini, and produces a tailored ATS-optimised resume in under 60 seconds — then pushes match score and gap analysis to Discord. Prompt constraints let the model reprioritise existing content but never invent experience.
 
-Three-stage pipeline (extraction → tailoring → scoring) with prompt constraints that let the model reprioritise existing content but never invent experience.
-
-`n8n` `Gemini API` `Node.js` `Gmail IMAP` `Discord`
+`n8n` `Gemini API` `Node.js` `Discord`
 
 <a href="https://github.com/MnHithesh/ai-resume-tailor-agent"><img src="https://img.shields.io/badge/Source-2C5364?style=flat-square&logo=github&logoColor=white"/></a>
 
@@ -184,13 +277,9 @@ Three-stage pipeline (extraction → tailoring → scoring) with prompt constrai
 
 ### ⏰ Task Reminder — Self-Hosted
 
-Browser notifications die when the browser closes, so delivery runs through a Discord bot instead — an outbound WebSocket needing no public URL, open port or TLS, so it works behind a home router.
+Browser notifications die when the browser closes, so delivery runs through a Discord bot — an outbound WebSocket needing no public URL, open port or TLS. Uses Node's built-in `node:sqlite`, avoiding native compilation and ABI breakage.
 
-Interactive embeds with action buttons, separate work and personal channels, and follow-up chasing for anything left unacknowledged.
-
-Uses Node's built-in `node:sqlite` rather than `better-sqlite3`, avoiding native compilation and per-release ABI breakage.
-
-`Node.js 24` `node:sqlite` `discord.js` `ESM`
+`Node.js 24` `node:sqlite` `discord.js`
 
 <a href="https://github.com/MnHithesh/task-remainder"><img src="https://img.shields.io/badge/Source-2C5364?style=flat-square&logo=github&logoColor=white"/></a>
 
@@ -210,80 +299,6 @@ Shared expense tracking, cost splitting and joint financial goals, with an OpenA
 [Frontend](https://github.com/MnHithesh/duobudget_frontend) · [Backend](https://github.com/MnHithesh/duobudget_backend)
 
 </details>
-
-<br/>
-
-<!-- ══════════════════════ EXPERIENCE ══════════════════════ -->
-
-## 💼 Experience
-
-> Most of my strongest work is client code in private repositories, so it won't show in the contribution graph below.
-
-<details open>
-<summary><b>Senior Frontend Developer & Tech Lead</b> · Delivery Centric · <i>Dec 2021 – Present</i></summary>
-
-<br/>
-
-**Coin Centric / Crypto Centric** — crypto trading platform · [live](https://www.coincentric.io/home)
-
-Led frontend architecture across a phased Angular 6 → 12 migration and a second Angular 14 application built from scratch. Implemented the platform's real-time charting through TradingView with WebSocket-driven market-data pipelines, a custom Canvas bubble visualisation, and a market-trend analytics module combining sentiment logic, RxJS orchestration and OnPush optimisation.
-
-Owned Copy Trading end to end. On the backend, built a crypto alerting system with price and percentage triggers dispatching email and SMS, limit-order processing via Puppeteer against live NSE pricing, and a re-engineered futures execution engine after breaking IIFL API changes.
-
-Currently sole frontend developer on a cross-platform Ionic trading app.
-
-`Angular 12/14` `TypeScript` `RxJS` `Node.js` `WebSockets` `TradingView` `Highcharts` `Canvas` `Puppeteer` `Ionic`
-
-<br/>
-
-**DCPS** (CRM & workforce management) and **Math Initiative** (EdTech) · *Oct 2022 – Jun 2024*
-
-Architected and delivered both platforms from scratch — Angular 14 structure, shared service layers, reusable component libraries and development standards. Implemented RBAC and permission-driven workflows in DCPS across recruiters, managers, sales and leadership; RxJS state management for recruitment workflows and learner progress; frontend caching to cut redundant API calls on data-heavy modules.
-
-`Angular 14` `RxJS` `Angular Material` `Node.js` `Express` `MongoDB` `SCSS`
-
-</details>
-
-<details>
-<summary><b>Junior Software Developer</b> · Qualitas Technologies · <i>Jul 2020 – Dec 2021</i></summary>
-
-<br/>
-
-**Eagle Eye Cloud** — AI/ML and computer vision platform
-
-Built Canvas-based UI components rendering spatial data, object positions and coordinate visualisations so clients could interpret AI detection and tracking output in real time. Built analytics dashboards with Plotly.js for model-performance monitoring, and worked with backend engineers and data scientists to align frontend data contracts. Contributed UX wireframing in Adobe XD and reusable component libraries across client deliverables.
-
-`Angular 11` `TypeScript` `RxJS` `Canvas` `Reactive Forms` `Plotly.js` `Adobe XD`
-
-</details>
-
-<details>
-<summary><b>Software Developer</b> · Elephantree Technologies · <i>Jul 2018 – Dec 2019</i></summary>
-
-<br/>
-
-**Move My Goods** — logistics platform
-
-Developed customer-facing modules on a 7-person team. Owned responsive layouts that had to hold up from older Android phones to desktop machines, since customers tracked shipments on whatever they had to hand. Led a full homepage redesign repositioning the platform from internal-tool feel to something a customer would trust with a shipment, and fixed production UI bugs on a live system with real users.
-
-`AngularJS` `Angular 6` `JavaScript` `HTML5` `CSS3` `Bootstrap`
-
-</details>
-
-<details>
-<summary><b>Intern</b> · Nokia Networks and Solutions · <i>Jan 2018 – Jun 2018</i></summary>
-
-<br/>
-
-Built a CERT vulnerability automation tool that automated security vulnerability reporting for the Nokia Security Management team.
-
-`Docker` `Jenkins`
-
-</details>
-
-<br/>
-
-**🎓 MCA** — Sri Jayachamarajendra College of Engineering, Bengaluru · 2018
 
 <br/>
 
