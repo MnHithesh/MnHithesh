@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://hitheshmn.prehinix.com/">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&duration=3000&pause=900&color=64B5F6&center=true&vCenter=true&width=680&lines=Angular+%C2%B7+React+%C2%B7+Micro+Frontends;8%2B+years+shipping+production+web+apps;Real-time+trading+platforms+%26+WebSocket+pipelines;Module+Federation+across+mismatched+bundlers" alt="Typing SVG"/>
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&duration=3000&pause=900&color=64B5F6&center=true&vCenter=true&width=800&height=45&lines=Angular+%C2%B7+React+%C2%B7+Micro+Frontends;8%2B+years+shipping+production+web+apps;Real-time+trading+platforms+%26+WebSocket+pipelines;Module+Federation+across+mismatched+bundlers" alt="Typing SVG"/>
   </a>
 </p>
 
