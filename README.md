@@ -1,139 +1,204 @@
-<h1 align="center">Hithesh M N</h1>
+<!-- ══════════════════════ HEADER ══════════════════════ -->
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0F2027,50:203A43,100:2C5364&height=200&section=header&text=Hithesh%20M%20N&fontColor=ffffff&fontSize=52&fontAlignY=34&desc=Senior%20Frontend%20Engineer&descAlignY=54&descSize=18&animation=fadeIn" alt="header"/>
 
 <p align="center">
-  <b>Senior Frontend Engineer</b> · Angular · React · Micro Frontends<br/>
-  8+ years building and scaling production web applications.<br/>
-  Currently leading frontend architecture on a live crypto trading platform.
+  <a href="https://hitheshmn.prehinix.com/">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&duration=3000&pause=900&color=64B5F6&center=true&vCenter=true&width=680&lines=Angular+%C2%B7+React+%C2%B7+Micro+Frontends;8%2B+years+shipping+production+web+apps;Real-time+trading+platforms+%26+WebSocket+pipelines;Module+Federation+across+mismatched+bundlers" alt="Typing SVG"/>
+  </a>
 </p>
 
 <p align="center">
-  <a href="https://hitheshmn.prehinix.com/"><img src="https://img.shields.io/badge/Portfolio-hitheshmn.prehinix.com-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/></a>
-  <a href="https://linkedin.com/in/hithesh-nandeesh"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-  <a href="mailto:m.n.hithesh26@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
-  <a href="https://stackoverflow.com/users/8815586"><img src="https://img.shields.io/badge/Stack%20Overflow-FE7A16?style=for-the-badge&logo=stackoverflow&logoColor=white" alt="Stack Overflow"/></a>
+  <a href="https://hitheshmn.prehinix.com/"><img src="https://img.shields.io/badge/Portfolio-0F2027?style=for-the-badge&logo=vercel&logoColor=64B5F6" alt="Portfolio"/></a>
+  <a href="https://linkedin.com/in/hithesh-nandeesh"><img src="https://img.shields.io/badge/LinkedIn-0F2027?style=for-the-badge&logo=linkedin&logoColor=0A66C2" alt="LinkedIn"/></a>
+  <a href="mailto:m.n.hithesh26@gmail.com"><img src="https://img.shields.io/badge/Email-0F2027?style=for-the-badge&logo=gmail&logoColor=EA4335" alt="Email"/></a>
+  <a href="https://stackoverflow.com/users/8815586"><img src="https://img.shields.io/badge/Stack_Overflow-0F2027?style=for-the-badge&logo=stackoverflow&logoColor=F48024" alt="Stack Overflow"/></a>
+  <img src="https://komarev.com/ghpvc/?username=MnHithesh&style=for-the-badge&color=203A43&label=PROFILE+VIEWS" alt="views"/>
 </p>
 
----
+<br/>
 
-### 👨‍💻 About
+<!-- ══════════════════════ ABOUT ══════════════════════ -->
 
-I own features end to end — interface through backend services to deployment. Most of my depth is in **Angular (v6 → v22)** and **RxJS-driven real-time systems**: WebSocket market data pipelines, TradingView chart integrations, custom HTML5 Canvas visualisations, and change-detection tuning on data-heavy screens.
+## 👋 About
 
-- 🏗️ Architecting a cross-platform **Ionic** trading app as sole frontend developer
-- 🧬 Building **micro frontend** systems with Module Federation across mismatched bundlers
-- 📱 Shipping offline-first mobile apps with **Angular 22 + Capacitor**
-- 🤖 Building AI automation pipelines with **n8n** and LLM APIs outside client work
-- 🌱 Currently learning **RabbitMQ** and **React Native**
-- 📍 Bengaluru, India · 📫 **m.n.hithesh26@gmail.com**
+<table>
+<tr>
+<td width="30%" align="center" valign="middle">
+  <img src="assets/hithesh-avatar-circle.png" width="200" alt="Hithesh M N"/>
+  <br/><br/>
+  <b>Hithesh M N</b><br/>
+  <sub>Bengaluru, India 🇮🇳</sub>
+</td>
+<td width="70%" valign="middle">
 
----
+```ts
+const hithesh: Engineer = {
+  role:      'Senior Frontend Developer & Tech Lead',
+  focus:     ['Angular v6 → v22', 'RxJS', 'Micro Frontends'],
+  building:  'a cross-platform Ionic trading app — sole dev',
+  learning:  ['RabbitMQ', 'React Native'],
+  ownership: 'interface → backend services → deployment',
+};
+```
 
-### 🚀 Projects
+I work on production systems where the frontend is the hard part — WebSocket market-data pipelines, TradingView chart integrations, custom HTML5 Canvas visualisations, and change-detection tuning on screens that update many times a second.
 
-#### 🔷 [Personal Portfolio — Micro Frontend Architecture](https://hitheshmn.prehinix.com/)
+</td>
+</tr>
+</table>
 
-Not a template. Built from scratch as a **micro frontend system**: an Angular shell owns routing, layout, and lifecycle, while a React remote is built independently in Vite and loaded at runtime via **Module Federation**.
+<br/>
 
-The interesting part is the bundler bridge — a Webpack-based Angular host consuming a pure-ESM Vite bundle, with explicit mount/unmount boundaries and no shared global state. Motion and smooth scroll handled with GSAP and Lenis.
+<!-- ══════════════════════ STACK ══════════════════════ -->
 
-`Angular` `React` `Vite` `Webpack Module Federation` `GSAP` `Lenis`
+## 🧰 Tech Stack
 
-#### 👕 [Dresscode — Offline-First Wardrobe App](https://github.com/MnHithesh/dresscode-mobile)
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=angular,react,ts,js,html,css,sass,bootstrap&theme=dark" alt="frontend"/><br/>
+  <img src="https://skillicons.dev/icons?i=nodejs,express,mongodb,sqlite,docker,aws,git,github&theme=dark" alt="backend"/><br/>
+  <img src="https://skillicons.dev/icons?i=vite,webpack,ionic,figma,postman,python,vscode&theme=dark" alt="tools"/>
+</p>
 
-An Android wardrobe manager built on **Angular 22 and Capacitor 8**, running entirely on-device. Catalogue your closet from camera captures, inspiration shots, tag scans, or receipts; build and save looks; get outfit suggestions and wear-pattern insights.
+<p align="center">
+  <img src="https://img.shields.io/badge/RxJS-1a1b27?style=flat-square&logo=reactivex&logoColor=B7178C" alt="RxJS"/>
+  <img src="https://img.shields.io/badge/Module_Federation-1a1b27?style=flat-square&logo=webpack&logoColor=8DD6F9" alt="Module Federation"/>
+  <img src="https://img.shields.io/badge/Capacitor-1a1b27?style=flat-square&logo=capacitor&logoColor=119EFF" alt="Capacitor"/>
+  <img src="https://img.shields.io/badge/TradingView-1a1b27?style=flat-square&logo=tradingview&logoColor=2962FF" alt="TradingView"/>
+  <img src="https://img.shields.io/badge/Highcharts-1a1b27?style=flat-square&logo=highcharts&logoColor=8087E8" alt="Highcharts"/>
+  <img src="https://img.shields.io/badge/Plotly-1a1b27?style=flat-square&logo=plotly&logoColor=3F4F75" alt="Plotly"/>
+  <img src="https://img.shields.io/badge/WebSockets-1a1b27?style=flat-square&logo=socketdotio&logoColor=ffffff" alt="WebSockets"/>
+  <img src="https://img.shields.io/badge/n8n-1a1b27?style=flat-square&logo=n8n&logoColor=EA4B71" alt="n8n"/>
+</p>
 
-Fully local persistence via SQLite (`@capacitor-community/sqlite` on device, `sql.js` + `jeep-sqlite` in the browser), bootstrapped through Angular's `provideAppInitializer` so the database and preferences are ready before the first route resolves. Standalone components with lazy-loaded routes throughout.
+<br/>
 
-`Angular 22` `Capacitor 8` `SQLite` `TypeScript` `RxJS` `Vitest`
+<!-- ══════════════════════ PROJECTS ══════════════════════ -->
 
-#### 🎯 [JobFit AI — Automated Resume Tailor Agent](https://github.com/MnHithesh/ai-resume-tailor-agent)
+## 🚀 Featured Projects
 
-An end-to-end automation pipeline that watches Gmail for recruiter emails, extracts the job description with Gemini, and produces a tailored ATS-optimised resume in under 60 seconds — then pushes an ATS match score, matched/missing skills, and improvement notes to Discord.
+<table>
+<tr>
+<td width="50%" valign="top">
 
-Three-stage pipeline (JD extraction → tailoring → ATS scoring) with prompt constraints that let the model reorder and reprioritise existing content but never invent experience.
+### 🔷 Portfolio — Micro Frontend
 
-`n8n` `Google Gemini API` `Node.js` `Gmail IMAP` `Discord Webhooks`
+<a href="https://hitheshmn.prehinix.com/">
+  <img src="assets/portfolio.png" width="100%" alt="Portfolio preview"/>
+</a>
 
-#### ⏰ [Task Reminder — Self-Hosted Reminder Service](https://github.com/MnHithesh/task-remainder)
+An Angular shell owns routing, layout and lifecycle; a React remote is built independently in Vite and loaded at runtime via **Module Federation**.
 
-A reminder service that actually reaches you. Browser notifications die when the browser closes, so delivery runs through a Discord bot on the server instead — an outbound WebSocket that needs no public URL, no open port, and no TLS, so it works behind a home router. Reminders arrive as interactive embeds with action buttons, routed to separate work and personal channels, with follow-up chasing for anything left unacknowledged.
+The hard part is the bundler bridge — a Webpack host consuming a pure-ESM Vite bundle, with explicit mount/unmount boundaries and no shared global state.
 
-Persistence uses Node's built-in `node:sqlite` rather than `better-sqlite3`, deliberately avoiding native compilation and the ABI breakage that comes with every Node release. Discord delivery degrades gracefully — drop the token and the rest of the service runs unchanged.
+`Angular` `React` `Vite` `Module Federation` `GSAP` `Lenis`
+
+<a href="https://hitheshmn.prehinix.com/"><img src="https://img.shields.io/badge/Live_Site-2C5364?style=flat-square&logo=vercel&logoColor=white"/></a>
+
+</td>
+<td width="50%" valign="top">
+
+### 👕 Dresscode — Offline Wardrobe App
+
+<a href="https://github.com/MnHithesh/dresscode-mobile">
+  <img src="assets/dresscode.png" width="100%" alt="Dresscode preview"/>
+</a>
+
+Android wardrobe manager on **Angular 22 + Capacitor 8**, running entirely on-device. Catalogue from camera, inspiration shots, tag scans or receipts; build looks; get wear-pattern insights.
+
+SQLite persistence with a browser fallback, bootstrapped via `provideAppInitializer` so the DB is ready before the first route resolves.
+
+`Angular 22` `Capacitor` `SQLite` `Vitest`
+
+<a href="https://github.com/MnHithesh/dresscode-mobile"><img src="https://img.shields.io/badge/Source-2C5364?style=flat-square&logo=github&logoColor=white"/></a>
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🎯 JobFit AI — Resume Tailor Agent
+
+<a href="https://github.com/MnHithesh/ai-resume-tailor-agent">
+  <img src="assets/jobfit.png" width="100%" alt="JobFit AI preview"/>
+</a>
+
+Watches Gmail for recruiter emails, extracts the JD with Gemini, and produces a tailored ATS-optimised resume in under 60 seconds — then pushes match score, matched/missing skills and improvement notes to Discord.
+
+Three-stage pipeline with prompt constraints that let the model reprioritise existing content but never invent experience.
+
+`n8n` `Gemini API` `Node.js` `Gmail IMAP`
+
+<a href="https://github.com/MnHithesh/ai-resume-tailor-agent"><img src="https://img.shields.io/badge/Source-2C5364?style=flat-square&logo=github&logoColor=white"/></a>
+
+</td>
+<td width="50%" valign="top">
+
+### ⏰ Task Reminder — Self-Hosted
+
+<a href="https://github.com/MnHithesh/task-remainder">
+  <img src="assets/task-reminder.png" width="100%" alt="Task Reminder preview"/>
+</a>
+
+Browser notifications die when the browser closes, so delivery runs through a Discord bot instead — an outbound WebSocket needing no public URL, open port or TLS, so it works behind a home router.
+
+Uses Node's built-in `node:sqlite` rather than `better-sqlite3`, avoiding native compilation and per-release ABI breakage.
 
 `Node.js 24` `node:sqlite` `discord.js` `ESM`
 
-#### 💰 DuoBudget — Shared Budget Tracker for Couples
+<a href="https://github.com/MnHithesh/task-remainder"><img src="https://img.shields.io/badge/Source-2C5364?style=flat-square&logo=github&logoColor=white"/></a>
 
-Shared expense tracking, cost splitting, and joint financial goals, with an OpenAI-powered assistant that analyses spending patterns and returns personalised suggestions.
+</td>
+</tr>
+</table>
 
-[Frontend](https://github.com/MnHithesh/duobudget_frontend) · [Backend](https://github.com/MnHithesh/duobudget_backend)
+<details>
+<summary><b>💰 DuoBudget — Shared Budget Tracker for Couples</b></summary>
+
+<br/>
+
+Shared expense tracking, cost splitting and joint financial goals, with an OpenAI-powered assistant that analyses spending patterns and returns personalised suggestions.
 
 `React` `Node.js` `Express` `OpenAI API`
 
----
+[Frontend](https://github.com/MnHithesh/duobudget_frontend) · [Backend](https://github.com/MnHithesh/duobudget_backend)
 
-### 🛠️ Tech Stack
+</details>
 
-**Frontend**
+<br/>
 
-![Angular](https://img.shields.io/badge/Angular-DD0031?style=flat-square&logo=angular&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=flat-square&logo=javascript&logoColor=F7DF1E)
-![RxJS](https://img.shields.io/badge/RxJS-B7178C?style=flat-square&logo=reactivex&logoColor=white)
-![SCSS](https://img.shields.io/badge/SCSS-CC6699?style=flat-square&logo=sass&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=white)
+<!-- ══════════════════════ STATS ══════════════════════ -->
 
-**Architecture**
-
-![Module Federation](https://img.shields.io/badge/Module_Federation-1B73BA?style=flat-square&logo=webpack&logoColor=white)
-![Webpack](https://img.shields.io/badge/Webpack-8DD6F9?style=flat-square&logo=webpack&logoColor=black)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
-![Micro Frontends](https://img.shields.io/badge/Micro_Frontends-4B32C3?style=flat-square)
-
-**Charting & Visualisation**
-
-![TradingView](https://img.shields.io/badge/TradingView-131722?style=flat-square&logo=tradingview&logoColor=white)
-![Highcharts](https://img.shields.io/badge/Highcharts-8087E8?style=flat-square&logo=highcharts&logoColor=white)
-![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=flat-square&logo=plotly&logoColor=white)
-![Canvas](https://img.shields.io/badge/HTML5_Canvas-E34F26?style=flat-square&logo=html5&logoColor=white)
-
-**Backend & Data**
-
-![Node.js](https://img.shields.io/badge/Node.js-6DA55F?style=flat-square&logo=node.js&logoColor=white)
-![Express](https://img.shields.io/badge/Express-404D59?style=flat-square&logo=express&logoColor=61DAFB)
-![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=flat-square&logo=mongodb&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
-![WebSockets](https://img.shields.io/badge/WebSockets-010101?style=flat-square&logo=socketdotio&logoColor=white)
-![Puppeteer](https://img.shields.io/badge/Puppeteer-40B5A4?style=flat-square&logo=puppeteer&logoColor=white)
-
-**Mobile, Cloud & Tools**
-
-![Capacitor](https://img.shields.io/badge/Capacitor-119EFF?style=flat-square&logo=capacitor&logoColor=white)
-![Ionic](https://img.shields.io/badge/Ionic-3880FF?style=flat-square&logo=ionic&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat-square&logo=amazonwebservices&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![n8n](https://img.shields.io/badge/n8n-EA4B71?style=flat-square&logo=n8n&logoColor=white)
-![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white)
-
----
-
-### 📊 GitHub Stats
+## 📊 Activity
 
 <p align="center">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=MnHithesh&show_icons=true&theme=shadow_blue&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub Stats"/>
-  <img width="41%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MnHithesh&theme=shadow_blue&hide_border=true&include_all_commits=true&count_private=true&layout=compact" alt="Top Languages"/>
+  <img width="48%" src="https://github-readme-stats.vercel.app/api?username=MnHithesh&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=64B5F6&icon_color=64B5F6&include_all_commits=true&count_private=true" alt="stats"/>
+  <img width="40%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MnHithesh&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=64B5F6&include_all_commits=true&count_private=true&layout=compact" alt="languages"/>
 </p>
 
 <p align="center">
-  <img width="60%" src="https://streak-stats.demolab.com?user=MnHithesh&theme=shadow_blue&hide_border=true" alt="GitHub Streak"/>
+  <img width="60%" src="https://streak-stats.demolab.com?user=MnHithesh&theme=tokyonight&hide_border=true&background=0D1117&ring=64B5F6&fire=64B5F6&currStreakLabel=64B5F6" alt="streak"/>
 </p>
-
----
 
 <p align="center">
-  <i>Open to conversations about frontend architecture, real-time systems, and micro frontends.</i><br/>
-  <a href="https://hitheshmn.prehinix.com/"><b>hitheshmn.prehinix.com</b></a>
+  <img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=MnHithesh&theme=tokyo-night&bg_color=0D1117&color=64B5F6&line=64B5F6&point=ffffff&hide_border=true&area=true" alt="activity graph"/>
 </p>
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=MnHithesh&theme=discord&no-frame=true&no-bg=true&column=7&margin-w=8" alt="trophies"/>
+</p>
+
+<!-- Contribution snake — generated by .github/workflows/snake.yml -->
+<p align="center">
+  <img width="95%" src="https://raw.githubusercontent.com/MnHithesh/MnHithesh/output/snake.svg" alt="contribution snake"/>
+</p>
+
+<br/>
+
+<!-- ══════════════════════ FOOTER ══════════════════════ -->
+
+<p align="center">
+  <i>Open to conversations about frontend architecture, real-time systems and micro frontends.</i>
+</p>
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:2C5364,50:203A43,100:0F2027&height=140&section=footer&text=hitheshmn.prehinix.com&fontColor=ffffff&fontSize=20&fontAlignY=72" alt="footer"/>
